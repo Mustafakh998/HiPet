@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل دخول | هاي بيت</title>
+    <meta name="description" content="سجل دخولك إلى هاي بيت وتابع طلباتك وخدمات التجميل بسهولة." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="auth-card" aria-labelledby="login-title">
+        <header>
+          <p class="eyebrow">أهلاً برجعتك</p>
+          <h1 id="login-title">تسجيل دخول لحسابك</h1>
+          <p>تحكم بطلباتك، شوف حالة التوصيل، وخلي فريق هاي بيت قريب منك كلش.</p>
+        </header>
+        <form class="auth-form" aria-label="نموذج تسجيل دخول">
+          <div class="form__row">
+            <label class="form__label" for="login-email">الإيميل</label>
+            <input
+              class="form__input"
+              type="email"
+              id="login-email"
+              name="email"
+              placeholder="اكتب الإيميل المسجل"
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="login-password">كلمة السر</label>
+            <input
+              class="form__input"
+              type="password"
+              id="login-password"
+              name="password"
+              placeholder="أدخل كلمة السر"
+              required
+            />
+          </div>
+          <div class="auth-actions">
+            <button class="btn btn--primary" type="submit">دخول</button>
+            <a href="#">نسيت كلمة السر؟</a>
+          </div>
+        </form>
+        <footer class="auth-actions">
+          <span>ماكو حساب بعد؟</span>
+          <a href="register.html">سوي حساب جديد</a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

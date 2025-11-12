@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إنشاء حساب | هاي بيت</title>
+    <meta name="description" content="سجل حسابك الجديد ويا هاي بيت وخلينا نوصل لحيوانك كل شي يحتاجه." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="auth-card" aria-labelledby="register-title">
+        <header>
+          <p class="eyebrow">هلا بيك ويا عائلتنا</p>
+          <h1 id="register-title">سوي حساب جديد</h1>
+          <p>بكم خطوة بسيطة تگدر تتابع طلباتك، جدولة التجميل، وتستقبل عروض خاصة من هاي بيت.</p>
+        </header>
+        <form class="auth-form" aria-label="نموذج إنشاء حساب">
+          <div class="form__row">
+            <label class="form__label" for="register-name">الاسم الكامل</label>
+            <input
+              class="form__input"
+              type="text"
+              id="register-name"
+              name="name"
+              placeholder="مثال: زهراء علي"
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="register-phone">رقم الهاتف</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="register-phone"
+              name="phone"
+              placeholder="‎+964 7xx xxx xxxx"
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="register-email">الإيميل</label>
+            <input
+              class="form__input"
+              type="email"
+              id="register-email"
+              name="email"
+              placeholder="اكتب إيميلك"
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="register-city">المدينة</label>
+            <input
+              class="form__input"
+              type="text"
+              id="register-city"
+              name="city"
+              placeholder="بغداد، أربيل، البصرة..."
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="register-password">كلمة السر</label>
+            <input
+              class="form__input"
+              type="password"
+              id="register-password"
+              name="password"
+              placeholder="اختار كلمة سر قوية"
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="register-pet">شنو حيوانك؟</label>
+            <input
+              class="form__input"
+              type="text"
+              id="register-pet"
+              name="pet"
+              placeholder="قط، كلب، طير..."
+            />
+          </div>
+          <button class="btn btn--primary" type="submit">إنشاء الحساب</button>
+        </form>
+        <footer class="auth-actions">
+          <span>عندك حساب؟</span>
+          <a href="login.html">سجل دخول</a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

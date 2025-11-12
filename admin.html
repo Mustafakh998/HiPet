@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>منصة الإدارة | هاي بيت</title>
+    <meta
+      name="description"
+      content="منصة إدارة هاي بيت لمتابعة الطلبات، جدول التجميل، ورسائل العملاء بلهجتنا العراقية."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="admin">
+      <header class="admin__header">
+        <div class="admin__topbar">
+          <div>
+            <div class="logo">لوحة هاي بيت</div>
+            <p>تابع الطلبات والتسليمات أول بأول، وجاوب محبين الحيوانات بصوت هاي بيت.</p>
+          </div>
+          <div class="admin__actions">
+            <a class="btn btn--secondary" href="index.html">رجوع للواجهة</a>
+            <a class="btn btn--primary" href="#">إضافة منتج جديد</a>
+          </div>
+        </div>
+        <div class="admin__stats">
+          <article class="stat-card">
+            <span>طلبات اليوم</span>
+            <strong>٢٤</strong>
+            <p>٩ تم تسليمهم، والباقي بالطريق.</p>
+          </article>
+          <article class="stat-card">
+            <span>جلسات التجميل</span>
+            <strong>١١</strong>
+            <p>٤ منجزة، ٧ تحتاج تأكيد من الفريق.</p>
+          </article>
+          <article class="stat-card">
+            <span>رسائل الإنستغرام</span>
+            <strong>٣٢</strong>
+            <p>أجوبة سريعة تخلي الزباين مرتاحين.</p>
+          </article>
+          <article class="stat-card">
+            <span>التقييم العام</span>
+            <strong>٤٫٩/٥</strong>
+            <p>صوت العملاء يدل على محبتهم لخدمتنا.</p>
+          </article>
+        </div>
+      </header>
+
+      <div class="admin__content">
+        <section class="admin__section" aria-labelledby="orders-title">
+          <div class="admin__section-header">
+            <h2 id="orders-title">أحدث الطلبات</h2>
+            <p>تابع حالة التوصيل وتأكد من تواصل السائقين مع الزباين.</p>
+          </div>
+          <div class="admin__table-wrapper">
+            <table class="admin__table">
+              <thead>
+                <tr>
+                  <th scope="col">الطلب</th>
+                  <th scope="col">العميل</th>
+                  <th scope="col">المدينة</th>
+                  <th scope="col">الحالة</th>
+                  <th scope="col">آخر تحديث</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#١٠٢٤</td>
+                  <td>زهراء أ.</td>
+                  <td>بغداد</td>
+                  <td><span class="badge badge--success">واصل</span></td>
+                  <td>اليوم - ١٠:٣٠ صباحاً</td>
+                </tr>
+                <tr>
+                  <td>#١٠٢٣</td>
+                  <td>سيف ع.</td>
+                  <td>أربيل</td>
+                  <td><span class="badge badge--pending">بالطريق</span></td>
+                  <td>اليوم - ٩:٤٥ صباحاً</td>
+                </tr>
+                <tr>
+                  <td>#١٠٢٢</td>
+                  <td>ليان م.</td>
+                  <td>البصرة</td>
+                  <td><span class="badge badge--alert">بانتظار الدفع</span></td>
+                  <td>أمس - ٥:٢٠ مساءً</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="admin__section" aria-labelledby="grooming-title">
+          <div class="admin__section-header">
+            <h2 id="grooming-title">جدول جلسات التجميل</h2>
+            <p>تأكد من تواجد الفريق المتنقل بكل موعد وما يفوتهم شي.</p>
+          </div>
+          <ul class="admin__notes">
+            <li><strong>اليوم - ٣:٠٠ مساءً:</strong> جلسة قص أظافر لبودل نور في الكرادة.</li>
+            <li><strong>اليوم - ٦:٠٠ مساءً:</strong> حمام وتعطير لكلب هاسكي لعائلة حيدر في المنصور.</li>
+            <li><strong>غداً - ١١:٠٠ صباحاً:</strong> حلاقة قط شيرازي لبيت سجى في أربيل.</li>
+          </ul>
+        </section>
+
+        <section class="admin__section" aria-labelledby="notes-title">
+          <div class="admin__section-header">
+            <h2 id="notes-title">ملاحظات الفريق</h2>
+            <p>نقاط سريعة حتى يبقى الشغل مرتب على أسلوب هاي بيت.</p>
+          </div>
+          <ul class="admin__notes">
+            <li>نبهوا السائقين يرسلون رسالة قبل الوصول بعشر دقايق.</li>
+            <li>جهزوا منشور إنستغرام عن خصم مستلزمات القطط نهاية الأسبوع.</li>
+            <li>تأكدوا من إعادة الاتصال بالعملاء اللي ينتظرون رد على عروض التبني.</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
